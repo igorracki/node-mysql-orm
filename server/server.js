@@ -8,8 +8,6 @@ const publicPath = path.join(__dirname, '../public');
 var app = express();
 var port = process.env.PORT || 3000;
 
-var numberOfRecords = 0;
-
 app.use(express.static(publicPath));
 app.use((request, response, next) => {
     var now = new Date().toString();
