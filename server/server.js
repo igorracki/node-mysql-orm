@@ -51,7 +51,6 @@ Car.findById(2).then((car) => {
 // Find and count all
 Car.findAndCountAll().then((result) => {
     console.log('\n**** findAndCountAll():\n', result.count);
-    numberOfRecords = result.count;
 }).catch((error) => {
     console.log(error);
 });
